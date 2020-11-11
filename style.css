@@ -1,0 +1,211 @@
+/* main body formatting*/
+
+body {
+    margin: 0;
+}
+
+/* header mobile-first format */
+
+header {
+    background-color:lightskyblue;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.name {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    margin: 0;
+}
+
+.occupation {
+    font-family: 'Gochi Hand', cursive;
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* format for unclassed images */
+img {
+    width: 30;
+}
+
+
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.intro-head {
+    font-family: 'Raleway', sans-serif;
+}
+
+p, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.about {
+    background-color: rgb(102, 79, 79);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2%;
+}
+
+.section-head {
+    font-family: 'Gochi Hand', cursive;
+}
+
+/* flex-box editing, mobile-friendly, order they appear on HTML */
+
+
+
+
+.project-1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.project-2 {
+    flex: 1;
+    margin: 10px;
+}
+
+.contact-master {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 10% 0 10%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: lightblue;
+    padding: 2%;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.form-section {
+    flex: 2;
+    margin: 0 50% 0 0;
+}
+
+.form-textarea {
+    flex: 2;
+    margin: 0 50% 0 0;
+}
+
+form label input {
+    display: flex;
+    margin: 1%;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    
+}
+
+form label {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    margin: 1%; 
+}
+
+form label textarea {
+    display: block;
+    width: 100%;
+    margin: 1%;
+    font-family: 'Raleway', sans-serif;
+}
+
+form button {
+    width: 50%;
+    font-family: 'Raleway', sans-serif;
+    margin: 2%;
+    border-radius: 2%;
+}
+
+.logos {
+    display: flex;
+    text-align: center;
+    margin: 0 0 5% 0;
+}
+
+.logo {
+    flex: 1;
+}
+
+
+
+.logo-img {
+    width: 100%;
+}
+
+/* desktop version editing */
+
+
+@media all and (min-width: 800px) {
+    header {
+        display: flex;
+        padding: 0 30px;
+        justify-content: space-between;
+    }
+
+    header .name .occupation {
+        margin: 14px 0;
+        padding-top: 0;
+    }
+
+    header nav {
+        margin-top: 8px;
+    }
+
+    header nav ul li a:hover {
+        color: #bdbdbd
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+    .intro-img {
+        flex: 1;
+        margin: 10px;
+    }
+    .intro-txt {
+        flex: 3;
+        margin: 10px;
+    }
+    .about {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+    .about-txt {
+        flex: 4;
+        margin: 10px;
+    }
+    .about-img {
+        flex: 1;
+        margin: 10px;
+    }
+
+}
